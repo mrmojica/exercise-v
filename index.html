@@ -2,12 +2,86 @@
 <html>
 
   <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  	<title>VLOCITY</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <script src="https://use.fontawesome.com/60b6fd13dd.js"></script>   
   </head>
 
   <body>
-    <h1>Hello from Vlocity!</h1>
+    <header class="container">
+    	<div class="header-wrapper">
+		<div class='search-container'>
+			<i class="fa fa-search search-icon" aria-hidden="false"></i>
+			<input type="text" class="searchbar" placeholder="Search" />
+			<span class="glyphicon glyphicon-remove x-button"></span>
+		</div>
+		<div class="profile-container">
+			<span class="user-name">Peter Hoang</span>
+			<img class="profile-image" src="img/profile-default.png" />
+			<div class="dropdown">
+			  <button class="dropbtn">
+			  	<a href="#">
+		          <span class="glyphicon glyphicon-triangle-bottom"></span>
+		        </a>
+			  </button>
+			  <div class="dropdown-content">
+			    <a href="#">Account</a>
+			    <a href="#">Settings</a>
+			    <a href="#">Logout</a>
+			  </div>
+			</div>
+		</div>
+		</div>	
+    </header>
+	
+	<div class="container content-container">
+    <div id="section-1">
+    	<div>
+    	<ul id="users" class="list-group">
+    	</ul>
+    	</div>
+    </div>
+
+    <div id="section-2">
+    	<div class="user-content">
+    	</div>
+    	<div class="message-form">
+			<form class="form-wrapper">
+			<label>Send Message:</label>
+			<textarea rows="4" cols="50">
+			</textarea>
+			<div class="send-msg-btn-wrapper">
+			<button id="submit-msg" class="msg-btn btn btn-default">Send</button>
+			<button id="send-close" class="msg-btn btn btn-default">Close</button>
+			</div>
+			</form>
+    	</div>
+		<div class="section-2-wrapper">
+			<table class="table">
+			<thead id="likes-list">
+				<tr>
+					<th>Likes</th>
+					<th>Dislikes</th>
+				</tr>
+			</thead>
+			<tbody id="likes-body">
+			</tbody>
+			</table>
+		</div>
+    </div>
+
+    </div>
+
+
+     <!-- SCRIPTS -->
+    <script type='text/javascript' src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 
 </html>
